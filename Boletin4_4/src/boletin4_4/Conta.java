@@ -77,8 +77,7 @@ public class Conta {
         return saldo;
     }
 
-    public void transferencia(Conta contaDestino, double importe) {
-        /*
+    public boolean transferencia(Conta contaDestino, double importe) {
         boolean correcto = true;
         if (importe < 0) {
             correcto = false;
@@ -88,8 +87,13 @@ public class Conta {
         } else {
             correcto = false;
         }
-        return correcto;*/
+        return correcto;
+    }
+    /* 
+    -FORMA CARLOS-
+    public void transferencia(Conta contaDestino, double importe){
         this.saldo = this.saldo - importe;
         contaDestino.setSaldo(contaDestino.getSaldo() + importe);
     }
+     */
 }

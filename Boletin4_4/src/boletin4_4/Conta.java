@@ -90,7 +90,7 @@ public class Conta {
         return correcto;
     }
     /* 
-    -FORMA CARLOS-
+    -FORMA CARLOS LAGO-
     public void transferencia(Conta contaDestino, double importe){
         this.saldo = this.saldo - importe;
         contaDestino.setSaldo(contaDestino.getSaldo() + importe);

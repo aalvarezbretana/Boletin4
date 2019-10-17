@@ -77,17 +77,10 @@ public class Conta {
         return saldo;
     }
 
-    public boolean transferencia(Conta contaDestino, double importe) {
-        boolean correcto = true;
-        if (importe < 0) {
-            correcto = false;
-        } else if (saldo >= importe) {
+    public void transferencia(Conta contaDestino, double importe) {
             reintegro(importe);
             contaDestino.ingreso(importe);
-        } else {
-            correcto = false;
         }
-        return correcto;
     }
     /* 
     -FORMA CARLOS LAGO-
@@ -96,4 +89,4 @@ public class Conta {
         contaDestino.setSaldo(contaDestino.getSaldo() + importe);
     }
      */
-}
+
